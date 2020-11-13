@@ -1,0 +1,8 @@
+<div class="alert alert-warning">
+	<div class="card" *ngFor="let cut of cuts">
+		<div class="card-body">
+			<p><a [href]="cut.link">{{ cut.name }}</a></p>
+			<button (click)="deleteLink(cut.link)" type="button" class="btn btn-danger">DELETE</button>
+		</div>
+	</div>
+</div>

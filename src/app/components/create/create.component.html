@@ -1,0 +1,11 @@
+<div class="alert alert-primary">
+	<div class="form-group">
+		<label for="nameInput">Name</label>
+		<input type="text" [(ngModel)]="name" placeholder="NAME" (keyup.enter)="addLink()" class="form-control" id="nameInput">
+	</div>
+	<div class="form-group">
+		<label for="linkInput">Link</label>
+		<input type="text" [(ngModel)]="link" placeholder="LINK" (keyup.enter)="addLink()" class="form-control" id="linkInput">
+	</div>
+	<button type="button" class="btn btn-success" (click)="addLink();">ADD</button>
+</div>
